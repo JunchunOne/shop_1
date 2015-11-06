@@ -1,0 +1,177 @@
+[ 2015-11-05T00:34:24+08:00 ] 192.168.1.133 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000002s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005748s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.081706s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.081920s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.032236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.032379s ]
+
+[ 2015-11-05T00:34:25+08:00 ] 192.168.1.133 /index.php?s=/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000236s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000679s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001546s ]
+
+[ 2015-11-05T00:34:25+08:00 ] 192.168.1.133 /index.php?s=/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000417s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000966s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2015-11-05T00:34:25+08:00 ] 192.168.1.133 /index.php?s=/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000852s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001642s ]
+
+[ 2015-11-05T00:34:33+08:00 ] 192.168.1.133 /index.php?s=/Admin/Goods/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000147s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.2743s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0123s ]
+SQL: SELECT * FROM `shop_goods` WHERE `status` <> -1 LIMIT 0,2   [ RunTime:0.0042s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000750s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001310s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 27 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 32 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 68 行.
+NOTIC: [8] Undefined index: goods_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 78 行.
+NOTIC: [8] Undefined index: goods_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000985s ]
+
+[ 2015-11-05T00:34:41+08:00 ] 192.168.1.133 /index.php?s=/Admin/Goods/goods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000646s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `shop_goods` WHERE `status` <> -1 LIMIT 0,2   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 43 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 27 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 32 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 68 行.
+NOTIC: [8] Undefined index: goods_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 78 行.
+NOTIC: [8] Undefined index: goods_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/69f80055448b2cce37712752515d7567.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2015-11-05T00:34:51+08:00 ] 192.168.1.133 /index.php?s=/Admin/Hao/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000268s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2015-11-05T00:35:22+08:00 ] 192.168.1.133 /index.php?s=/Admin/Hao/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+
+[ 2015-11-05T00:35:40+08:00 ] 192.168.1.133 /index.php?s=/Admin/Hao/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000194s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000571s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+

@@ -1,0 +1,98 @@
+<extend name="public/common"/>
+<block name="css">
+    <link href="__UPLOADIFY__/uploadify.css" rel="stylesheet" type="text/css" />
+</block>
+<block name="content">
+    <div class="main-div">
+        <form method="post" action="{:U()}" enctype="multipart/form-data">
+            <table cellspacing="1" cellpadding="3" width="100%">
+                                                <tr>
+                    <td class="label">品牌名称</td>
+                    <td>
+                        <input type="text" name="name" maxlength="60" value="{$name}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">品牌网址</td>
+                    <td>
+                        <input type="text" name="urll" maxlength="60" value="{$urll}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">品牌LOGO</td>
+                    <td>
+                        <input type="file" id="file_upload" name="logo" maxlength="60" value="{$logo}" class=""/>
+                        <input type="hidden"  name="logo" maxlength="60" value="{$logo}" class="logo"/>
+                        <div class="file_img" style="display: {$logo?'block':'none'}">
+                            <img class="tu" src="/Application/Uploads/{$logo}">
+                        </div>
+
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">品牌描述</td>
+                    <td>
+                        <input type="text" name="intro" maxlength="60" value="{$intro}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">状态</td>
+                    <td>
+                    <input type='radio' name='status' class='status' value='1'/> 是
+                    <input type='radio' name='status' class='status' value='0'/> 否
+                                        </td>
+                </tr>
+                                                                <tr>
+                    <td class="label">排序</td>
+                    <td>
+                        <input type="text" name="sort" maxlength="60" value="{$sort}"/>
+                    </td>
+
+                </tr>
+                                                <tr>
+                    <td colspan="2" align="center"><br/>
+                        <input type="hidden" name="id" value="{$id}"/>
+                        <input type="submit" class="button ajax_post" value=" 确定 "/>
+                        <input type="reset" class="button" value=" 重置 "/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript" src="__JS__/public.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="__LAYER__/layer.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script type="text/javascript" src="__UPLOADIFY__/jquery.uploadify.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.status').val([{$status|default =1}]);
+
+                $("#file_upload").uploadify({
+                    height        : 20,
+                    swf           : '__UPLOADIFY__/uploadify.swf',
+                    uploader      : '{:U("Upload/index")}', //在服务器上处理的url地址
+                    width         : 145,
+                    buttonText    :'上传文件',
+                    fileSizeLimit:'100KB',
+                    fileObjName : 'logoOne',//默认值为filedata
+                    'onUploadError' : function(file, errorCode, errorMsg, errorString) {
+                        alert(file.name + ' 上传失败。详细信息: ' + errorString);
+                    },
+                    'onUploadSuccess' : function(file, data, response) {
+                        $('.logo').val(data);
+                        $('.file_img').show();
+                        $('.tu').attr('src',"/Application/Uploads/"+data)
+                    },
+                })
+
+
+        })
+    </script>
+</block>
+
+
