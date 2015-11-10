@@ -3,8 +3,10 @@
 <head>
     <title>ECSHOP 管理中心 - 商品列表 </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    
+    
     
 
     
@@ -19,7 +21,7 @@
 </h1>
 
     <div class="main-div">
-        <form method="post" action="<?php echo U();?>">
+        <form method="post" action="<?php echo U();?>" enctype="multipart/form-data">
             <table cellspacing="1" cellpadding="3" width="100%">
                 <tr>
                     <td class="label">供货商名称</td>
@@ -50,17 +52,17 @@
                 <tr>
                     <td colspan="2" align="center"><br/>
                         <input type="hidden" name="id" value="<?php echo ($id); ?>"/>
-                        <input type="submit" class="button ajax_post" value=" 确定 "/>
+                        <input type="submit" class="button" value=" 确定 "/>
                         <input type="reset" class="button" value=" 重置 "/>
                     </td>
                 </tr>
             </table>
         </form>
     </div>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/public.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/layer/layer.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/public.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/layer/layer.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/common.js"></script>
     <script type="text/javascript">
         $(function () {
             $('.status').val([<?php echo ((isset($status) && ($status !== ""))?($status):1); ?>]);

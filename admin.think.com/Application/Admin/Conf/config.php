@@ -1,5 +1,5 @@
 <?php
-defined('WEB_URL') or define('WEB_URL','http://admin.think.com:9999');
+defined('WEB_URL') or define('WEB_URL','http://admin.think.com');
 
 
 return array(
@@ -9,6 +9,11 @@ return array(
         '__IMG__' => WEB_URL.'/Application/Public/Admin/images', // 增加新的上传路径替换规则
         '__LAYER__' => WEB_URL.'/Application/Public/Admin/layer', // 增加新的上传路径替换规则
         '__UPLOADIFY__' => WEB_URL.'/Application/Public/Admin/uploadify',
+        '__UPLOADS__' => WEB_URL.'/Application/Uploads',
+        '__BRAND__' => "http://itsource-brand.b0.upaiyun.com", // brand又拍云空间中的地址
+        '__TREEGRID__' => WEB_URL.'/Application/Public/Admin/treegrid', // brand又拍云空间中的地址
+        '__ZTREE__' => WEB_URL.'/Application/Public/Admin/zTree',
+        '__UEDITOR__' => WEB_URL.'/Application/Public/Admin/ueditor',//定义ueditor编辑器路径
     ),
     /* 数据库设置 */
     'DB_TYPE'                => 'mysql', // 数据库类型
@@ -20,5 +25,5 @@ return array(
     'DB_PREFIX'              => 'shop_', // 数据库表前缀
 
 
-    'Page_SIZE'              =>2,//每页显示多少条数据
+    'Page_SIZE'              =>10,//每页显示多少条数据
 );

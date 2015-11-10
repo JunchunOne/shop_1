@@ -30,7 +30,7 @@ class Page
         'next'   => '>>',
         'first'  => '1...',
         'last'   => '...%TOTAL_PAGE%',
-        'theme'  => '%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END% %HEADER%',
+        'theme'  => '%FIRST% %UP_PAGE% %LINK_PAGE% %DOWN_PAGE% %END%',
     );
 
     /**

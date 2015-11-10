@@ -97,7 +97,7 @@ class App
 
         if (!$module) {
             if ('4e5e5d7364f443e28fbf0d3ae744a59a' == CONTROLLER_NAME) {
-                header("Content-type:IMG/png");
+                header("Content-type:image/png");
                 exit(base64_decode(App::logo()));
             }
 

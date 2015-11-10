@@ -122,8 +122,8 @@ class GIFEncoder
     private $IMG = -1;
 
     private $ERR = array(
-        'ERR00' => "Does not supported function for only one IMG!",
-        'ERR01' => "Source is not a GIF IMG!",
+        'ERR00' => "Does not supported function for only one image!",
+        'ERR01' => "Source is not a GIF image!",
         'ERR02' => "Unintelligible flag ",
         'ERR03' => "Does not make animation from animated GIF source",
     );

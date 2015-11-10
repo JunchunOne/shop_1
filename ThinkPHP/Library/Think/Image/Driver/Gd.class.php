@@ -111,7 +111,7 @@ class Gd
             //ImagePNG生成图像的质量范围从0到9的
             imagepng($this->img, $imgname, $quality / 10);
         } else {
-            $fun = 'IMG' . $type;
+            $fun = 'image' . $type;
             $fun($this->img, $imgname);
         }
     }

@@ -124,7 +124,7 @@ all languages:
 
 # Added in .2.4: malformed YAML
 all
-  javascripts:     [dom1.JS, dom.JS]
+  javascripts:     [dom1.js, dom.js]
 
 # Added in .2
 1040: Ooo, a numeric key! # And working comments? Wow! Colons in comments: a menace (0.3).

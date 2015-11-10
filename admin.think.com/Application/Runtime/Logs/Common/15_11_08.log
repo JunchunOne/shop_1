@@ -1,0 +1,30 @@
+[ 2015-11-08T02:12:05+08:00 ] 127.0.0.1 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-08T03:11:05+08:00 ] 127.0.0.1 /Application/Public/Admin/css/bar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-08T03:11:08+08:00 ] 127.0.0.1 /Application/Public/Admin/css/invbar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-08T03:11:08+08:00 ] 127.0.0.1 /Application/Public/Admin/css/invbar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000500s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-08T20:18:10+08:00 ] 192.168.1.6 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+ERR: 无法加载模块:404
+

@@ -4,7 +4,7 @@
 </block>
 <block name="content">
     <div class="form-div">
-        <form action="{:U('goods')}"  method="get">
+        <form action="{:U('goods')}" name="searchForm" method="get">
             <img src="__IMG__/icon_search.gif" width="26" height="22" border="0" alt="search"/>
             <!-- 分类 -->
             <select name="cat_id">
@@ -54,7 +54,7 @@
                 <tr>
                     <td align="center"><input type="checkbox" name="id[]" class="id" value="{$list.id}"/></td>
                     <td align='center'>{$list.name}</td>
-<td align='center'>{$list.urll}</td>
+<td align='center'>{$list.url}</td>
 <td align='center'>{$list.logo}</td>
 <td align='center'>{$list.intro}</td>
 <td align='center'><a  class='ajax_get' href='{:U('changStatus',array('id'=>$list['id'],'status'=>1-$list['status']))}'><img src='__IMG__/{$list.status}.gif'/></a></td>

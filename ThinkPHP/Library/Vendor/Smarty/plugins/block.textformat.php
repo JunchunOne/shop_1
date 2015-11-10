@@ -11,7 +11,7 @@
  *
  * Type:     block function<br>
  * Name:     textformat<br>
- * Purpose:  format text a certain way with preset CSS
+ * Purpose:  format text a certain way with preset styles
  *           or custom wrap/indent settings<br>
  * Params:
  * <pre>

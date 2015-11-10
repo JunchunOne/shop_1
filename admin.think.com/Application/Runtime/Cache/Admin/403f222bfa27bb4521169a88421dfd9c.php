@@ -4,7 +4,7 @@
 <head>
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css"/>
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css"/>
     <style type="text/css">
         #header-div {
             background: #278296;
@@ -118,7 +118,7 @@
 <body>
 <div id="header-div">
     <div id="logo-div" style="bgcolor:#000000;">
-        <img src="http://admin.think.com:9999/Application/Public/Admin/images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce"/>
+        <img src="http://admin.think.com/Application/Public/Admin/images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce"/>
     </div>
     <div id="submenu-div">
         <ul>

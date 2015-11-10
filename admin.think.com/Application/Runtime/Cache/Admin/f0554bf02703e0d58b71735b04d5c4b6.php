@@ -3,8 +3,11 @@
 <head>
     <title>ECSHOP 管理中心 - 商品列表 </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="http://admin.think.com/Application/Public/Admin/uploadify/uploadify.css" rel="stylesheet" type="text/css" />
+
     
 
     
@@ -18,68 +21,110 @@
     <div style="clear:both"></div>
 </h1>
 
-    <div class="main-div">
-        <form method="post" action="<?php echo U();?>">
-            <table cellspacing="1" cellpadding="3" width="100%">
-                                                <tr>
-                    <td class="label">品牌名称</td>
-                    <td>
-                        <input type="text" name="name" maxlength="60" value="<?php echo ($name); ?>"/>
-                    </td>
+    <form method="post" action="<?php echo U();?>" enctype="multipart/form-data">
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <tr>
+                <td class="label">品牌名称</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <input type="text" name="name" maxlength="60" value="<?php echo ($name); ?>">                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">品牌网址</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <input type="text" name="urll" maxlength="60" value="<?php echo ($urll); ?>">                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">品牌LOGO</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <input type="file" name="upload-logo" id="upload-logo"/>
+                    <input type="hidden" class="logo" name="logo" value="<?php echo ($logo); ?>">
 
-                </tr>
-                                                                <tr>
-                    <td class="label">品牌网址</td>
-                    <td>
-                        <input type="text" name="urll" maxlength="60" value="<?php echo ($urll); ?>"/>
-                    </td>
-
-                </tr>
-                                                                <tr>
-                    <td class="label">品牌LOGO</td>
-                    <td>
-                        <input type="file" name="logo" maxlength="60" value="<?php echo ($logo); ?>"/>
-                    </td>
-
-                </tr>
-                                                                <tr>
-                    <td class="label">品牌描述</td>
-                    <td>
-                        <input type="text" name="intro" maxlength="60" value="<?php echo ($intro); ?>"/>
-                    </td>
-
-                </tr>
-                                                                <tr>
-                    <td class="label">状态</td>
-                    <td>
-                    <input type='radio' name='status' class='status' value='1'/> 是
-                    <input type='radio' name='status' class='status' value='0'/> 否
-                                        </td>
-                </tr>
-                                                                <tr>
-                    <td class="label">排序</td>
-                    <td>
-                        <input type="text" name="sort" maxlength="60" value="<?php echo ($sort); ?>"/>
-                    </td>
-
-                </tr>
-                                                <tr>
-                    <td colspan="2" align="center"><br/>
-                        <input type="hidden" name="id" value="<?php echo ($id); ?>"/>
-                        <input type="submit" class="button ajax_post" value=" 确定 "/>
-                        <input type="reset" class="button" value=" 重置 "/>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/public.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/layer/layer.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/common.js"></script>
+                    <div class="upload-img-box" style="display: <?php echo ($logo?'block':'none'); ?>">
+                        <div class="upload-pre-item">
+                            <img src="http://admin.think.com/Application/Uploads/<?php echo ($logo); ?>">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">品牌描述</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <textarea name="intro" cols="60" rows="4"><?php echo ($intro); ?></textarea>
+                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">状态</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <input type="radio" class="status" value="1" name="status"/>是<input type="radio" class="status" value="0" name="status"/>否                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">排序</td>
+                <td>
+                    <!---
+                      //目的: 根据每个字段的注解中指定的表单元素的类型,生成不同的表单元素
+                       1. 获取每个注解中的表单元素类型
+                    -->
+                    <input type="text" name="sort" maxlength="60" value="<?php echo ((isset($sort) && ($sort !== ""))?($sort):20); ?>">                    <span class="require-field">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><br />
+                    <input type="hidden"  name="id" value="<?php echo ($id); ?>" />
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/public.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/layer/layer.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/uploadify/jquery.uploadify.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $('.status').val([<?php echo ((isset($status) && ($status !== ""))?($status):1); ?>]);
+        $("#upload-logo").uploadify({
+            height        : 25,    //指定删除插件的高和宽
+            width         : 145,
+            swf           : 'http://admin.think.com/Application/Public/Admin/uploadify/uploadify.swf',  //指定swf的地址
+            uploader      : '<?php echo U("Upload/index");?>',   //在服务器上处理上传的代码
+            'buttonText' : '选择图片',   //上传按钮上面的文字
+            'fileSizeLimit' : '100KB',  //限制大小
+//            'fileObjName' : 'the_files',  //上传文件时, name的值 ,  默认值为  Filedata     $_FIELS['Filedata']
+            'formData'      : {'dir' : 'brand'},   //通过post方式传递的额外参数
+            'multi'    : true,   //是否支持多文件上传
+            'onUploadSuccess' : function(file, data, response) {   //上传成功时执行的方法
+                $('.logo').val(data);
+                $('.upload-img-box').show();
+                $('.upload-img-box img').attr('src',"http://admin.think.com/Application/Uploads/"+data);
+            },
+            'onUploadError' : function(file, errorCode, errorMsg, errorString) {   //上传失败时该方法执行
+                alert('该文件上传失败!错误信息为:' + errorString);
+            }
+
 
         });
     </script>

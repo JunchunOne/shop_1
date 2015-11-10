@@ -3,10 +3,12 @@
 <head>
     <title>ECSHOP 管理中心 - 商品列表 </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
     
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
+    
+    
+    <link href="http://admin.think.com/Application/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -20,7 +22,7 @@
 
     <div class="form-div">
         <form action="<?php echo U('goods');?>" name="searchForm" method="get">
-            <img src="http://admin.think.com:9999/Application/Public/Admin/images/icon_search.gif" width="26" height="22" border="0" alt="search"/>
+            <img src="http://admin.think.com/Application/Public/Admin/images/icon_search.gif" width="26" height="22" border="0" alt="search"/>
             <!-- 分类 -->
             <select name="cat_id">
                 <option value="0">所有分类</option>
@@ -73,15 +75,15 @@
                         <td align="center"><span><?php echo ($val["sort"]); ?></span></td>
                         <td align="center"><a class="ajax_get"
                                               href="<?php echo U('changStatus',array('id'=>$val['id'],'status'=>1-$val['status']));?>"><img
-                                src="http://admin.think.com:9999/Application/Public/Admin/images/<?php echo ($val["status"]); ?>.gif"/></a></td>
+                                src="http://admin.think.com/Application/Public/Admin/images/<?php echo ($val["status"]); ?>.gif"/></a></td>
                         <td align="center">
-                            <a href="/index.php?s=/Goods/?goods_id=<<?php echo ($val["goods_id"]); ?>>" target="_blank" title="查看"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_view.gif" width="16" height="16" border="0"/></a>
+                            <a href="/index.php/Goods/?goods_id=<<?php echo ($val["goods_id"]); ?>>" target="_blank" title="查看"><img
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_view.gif" width="16" height="16" border="0"/></a>
                             <a href="<?php echo U('edit',array('id'=>$val['id']));?>" title="编辑"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_edit.gif" width="16" height="16" border="0"/></a>
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_edit.gif" width="16" height="16" border="0"/></a>
                             <a class="ajax_get" href="<?php echo U('changStatus',array('id'=>$val['id']));?>" onclick=""
                                title="回收站"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_trash.gif" width="16" height="16" border="0"/></a></td>
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_trash.gif" width="16" height="16" border="0"/></a></td>
                     </tr><?php endforeach; endif; ?>
             </table>
         </div>
@@ -90,10 +92,10 @@
         <?php echo ($html); ?>
     </div>
     <!-- 分页结束 -->
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/public.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/layer/layer.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/public.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/layer/layer.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/common.js"></script>
 
 
 <div id="footer">

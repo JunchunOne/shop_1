@@ -4,7 +4,7 @@
 <head>
     <title>ECSHOP Menu</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css"/>
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css"/>
 
     <style type="text/css">
         body {
@@ -91,17 +91,17 @@
         }
 
         .explode {
-            background: url(http://admin.think.com:9999/Application/Public/Admin/images/menu_minus.gif) no-repeat 0px 3px;
+            background: url(http://admin.think.com/Application/Public/Admin/images/menu_minus.gif) no-repeat 0px 3px;
             font-weight: bold;
         }
 
         .collapse {
-            background: url(http://admin.think.com:9999/Application/Public/Admin/images/menu_plus.gif) no-repeat 0px 3px;
+            background: url(http://admin.think.com/Application/Public/Admin/images/menu_plus.gif) no-repeat 0px 3px;
             font-weight: bold;
         }
 
         .menu-item {
-            background: url(http://admin.think.com:9999/Application/Public/Admin/images/menu_arrow.gif) no-repeat 0px 3px;
+            background: url(http://admin.think.com/Application/Public/Admin/images/menu_arrow.gif) no-repeat 0px 3px;
             font-weight: normal;
         }
 
@@ -132,7 +132,7 @@
     <p>
         <span style="float:right; padding:3px 5px;">
             <a href="javascript:toggleCollapse();">
-                <img id="toggleImg" src="http://admin.think.com:9999/Application/Public/Admin/images/menu_minus.gif" width="9" height="9" border="0" alt="闭合"/>
+                <img id="toggleImg" src="http://admin.think.com/Application/Public/Admin/images/menu_minus.gif" width="9" height="9" border="0" alt="闭合"/>
             </a>
         </span>
         <span class="tab-front" id="menu-tab">菜单</span>
@@ -178,9 +178,9 @@
         <div id="help-content"></div>
     </div>
 </div>
-<script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/global.js"></script>
-<script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/utils.js"></script>
-<script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/transport.js"></script>
+<script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/global.js"></script>
+<script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/utils.js"></script>
+<script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/transport.js"></script>
 <script language="JavaScript">
     var collapse_all = "闭合";
     var expand_all = "展开";
@@ -201,7 +201,7 @@
             }
         }
         collapse = !collapse;
-        document.getElementById('toggleImg').src = collapse ? 'http://admin.think.com:9999/Application/Public/Admin/images/menu_minus.gif' : 'http://admin.think.com:9999/Application/Public/Admin/images/menu_plus.gif';
+        document.getElementById('toggleImg').src = collapse ? 'http://admin.think.com/Application/Public/Admin/images/menu_minus.gif' : 'http://admin.think.com/Application/Public/Admin/images/menu_plus.gif';
         document.getElementById('toggleImg').alt = collapse ? collapse_all : expand_all;
     }
 
@@ -321,7 +321,7 @@
                             }
                         }
                     }
-                    document.getElementById('toggleImg').src = collapse ? 'http://admin.think.com:9999/Application/Public/Admin/images/menu_minus.gif' : 'http://admin.think.com:9999/Application/Public/Admin/images/menu_plus.gif';
+                    document.getElementById('toggleImg').src = collapse ? 'http://admin.think.com/Application/Public/Admin/images/menu_minus.gif' : 'http://admin.think.com/Application/Public/Admin/images/menu_plus.gif';
                     document.getElementById('toggleImg').alt = collapse ? collapse_all : expand_all;
                 }
             }

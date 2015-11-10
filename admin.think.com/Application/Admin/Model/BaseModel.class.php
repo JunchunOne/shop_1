@@ -15,7 +15,7 @@ use Think\Page;
 class BaseModel extends Model
 {
 
-    public function changPage($wheres=array())
+    public function changPage($wheres = array())
     {
         //.........设置查询的where条件...........
         $wheres['status'] = array('NEQ', -1);
@@ -49,6 +49,13 @@ class BaseModel extends Model
         return array('num' => $nums, 'htmls' => $html);
     }
 
+    public function goodsList($where=array())
+    {
+        $where['status']=array('EGT',0);
+      return  $this->where($where)->select();
+
+    }
+
     public function changStatus($id, $status)
     {
         //>通过点击来来变换status的值1或者0 就要等到他当前的status
@@ -60,9 +67,13 @@ class BaseModel extends Model
             //.....exp  支持sql的表达式....
             $data['name'] = array('exp', "concat(name,'_del')");
         }
-        //使用id删除数据
-        $result = $this->where(array('id' => array('in', $id)))->save($data);
 
+        //使用id删除数据
+        $this->where(array('id' => array('in', $id), 'status<>-1'));
+
+        //因为子类中覆盖了save方法,所以要调用父类中的;
+        $result = parent::save($data);
         return $result;
+
     }
 }

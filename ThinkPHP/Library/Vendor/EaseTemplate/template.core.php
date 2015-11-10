@@ -17,7 +17,7 @@ class ETCore{
 	var $ThisValue	= array();			//当前数值
 	var $FileList	= array();			//载入文件列表
 	var $IncList	= array();			//引入文件列表
-	var $ImgDir		= array('IMG');	//图片地址目录
+	var $ImgDir		= array('images');	//图片地址目录
 	var $HtmDir		= 'cache_htm/';		//静态存放的目录
 	var $HtmID		= '';				//静态文件ID
 	var $HtmTime	= '180';			//秒为单位，默认三分钟

@@ -1,0 +1,54 @@
+[ 2015-11-09T19:05:48+08:00 ] 192.168.1.6 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-09T19:24:34+08:00 ] 192.168.1.6 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T19:38:51+08:00 ] 192.168.1.6 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T21:20:15+08:00 ] 192.168.1.2 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-09T21:23:07+08:00 ] 192.168.1.2 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T22:00:29+08:00 ] 192.168.1.2 /Application/Public/Admin/css/bar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T22:12:28+08:00 ] 192.168.1.2 /Application/Public/Admin/css/invbar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T22:14:01+08:00 ] 192.168.1.2 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000697s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-09T22:19:36+08:00 ] 192.168.1.2 /Application/Public/Admin/css/invbar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:404
+

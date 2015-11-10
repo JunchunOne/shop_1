@@ -3,10 +3,12 @@
 <head>
     <title>ECSHOP 管理中心 - 商品列表 </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/general.css" rel="stylesheet" type="text/css" />
+    <link href="http://admin.think.com/Application/Public/Admin/css/main.css" rel="stylesheet" type="text/css" />
     
-    <link href="http://admin.think.com:9999/Application/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
+    
+    
+    <link href="http://admin.think.com/Application/Public/Admin/css/page.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -19,8 +21,8 @@
 </h1>
 
     <div class="form-div">
-        <form action="<?php echo U('goods');?>" name="searchForm" method="get">
-            <img src="http://admin.think.com:9999/Application/Public/Admin/images/icon_search.gif" width="26" height="22" border="0" alt="search"/>
+        <form action="<?php echo U('goods');?>"  method="get">
+            <img src="http://admin.think.com/Application/Public/Admin/images/icon_search.gif" width="26" height="22" border="0" alt="search"/>
             <!-- 分类 -->
             <select name="cat_id">
                 <option value="0">所有分类</option>
@@ -67,26 +69,26 @@
 <td align='center'><?php echo ($list["urll"]); ?></td>
 <td align='center'><?php echo ($list["logo"]); ?></td>
 <td align='center'><?php echo ($list["intro"]); ?></td>
-<td align='center'><a  class='ajax_get' href='<?php echo U('changStatus',array('id'=>$list['id'],'status'=>1-$list['status']));?>'><img src='http://admin.think.com:9999/Application/Public/Admin/images/<?php echo ($list["status"]); ?>.gif'/></a></td>
+<td align='center'><a  class='ajax_get' href='<?php echo U('changStatus',array('id'=>$list['id'],'status'=>1-$list['status']));?>'><img src='http://admin.think.com/Application/Public/Admin/images/<?php echo ($list["status"]); ?>.gif'/></a></td>
 <td align='center'><?php echo ($list["sort"]); ?></td>
                     <td align="center">
-                        <a href="/index.php?s=/Goods/?goods_id=<<?php echo ($val["goods_id"]); ?>>" target="_blank" title="查看"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_view.gif" width="16" height="16" border="0"/></a>
+                        <a href="/index.php/Goods/?goods_id=<<?php echo ($val["goods_id"]); ?>>" target="_blank" title="查看"><img
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_view.gif" width="16" height="16" border="0"/></a>
                         <a href="<?php echo U('edit',array('id'=>$list['id']));?>" title="编辑"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_edit.gif" width="16" height="16" border="0"/></a>
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_edit.gif" width="16" height="16" border="0"/></a>
                         <a class="ajax_get" href="<?php echo U('changStatus',array('id'=>$list['id']));?>" onclick=""
                            title="回收站"><img
-                                    src="http://admin.think.com:9999/Application/Public/Admin/images/icon_trash.gif" width="16" height="16" border="0"/></a></td>
+                                    src="http://admin.think.com/Application/Public/Admin/images/icon_trash.gif" width="16" height="16" border="0"/></a></td>
                 </tr><?php endforeach; endif; ?>
         </table>
         <div class="black">
        <?php echo ($html); ?>
         </div>
     </div>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/public.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/layer/layer.js"></script>
-    <script type="text/javascript" src="http://admin.think.com:9999/Application/Public/Admin/js/common.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/public.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/layer/layer.js"></script>
+    <script type="text/javascript" src="http://admin.think.com/Application/Public/Admin/js/common.js"></script>
 
 <div id="footer">
     共执行 7 个查询，用时 0.028849 秒，Gzip 已禁用，内存占用 3.219 MB<br />
