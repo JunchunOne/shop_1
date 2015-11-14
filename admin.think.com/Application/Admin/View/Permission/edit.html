@@ -1,0 +1,120 @@
+<extend name="public/common"/>
+<block name="css">
+    <link rel="stylesheet" href="__ZTREE__/css/zTreeStyle/zTreeStyle.css" type="text/css">
+</block>
+<block name="content">
+    <div class="main-div">
+        <form method="post" action="{:U()}">
+            <table cellspacing="1" cellpadding="3" width="100%">
+                <tr>
+                    <td class="label">权限名称</td>
+                    <td>
+                        <input type="text" name="name" maxlength="60" value="{$name}"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="label">权限的URL</td>
+                    <td>
+                        <input type="text" class="url" name="url" maxlength="60" value="<notempty name='id'>{$url}</notempty>"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="label">父权限</td>
+                    <td>
+                        <input type="text" name="parent_id" class="parent" disabled="disabled" />
+                        <input type="hidden" name="parent_id" class="parent_id"  value="{$parent_id?$parent_id:0}"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="label"></td>
+                    <td>
+                        <ul id="treeDemo" class="ztree">
+                        </ul>
+
+                    </td>
+                <tr>
+                    <td class="label">简介</td>
+                    <td>
+                        <input type="text" name="intro" maxlength="60" value="{$intro}"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="label">状态</td>
+                    <td>
+                        <input type='radio' name='status' class='status' value='1'/> 是
+                        <input type='radio' name='status' class='status' value='0'/> 否
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">排序</td>
+                    <td>
+                        <input type="text" name="sort" maxlength="60" value="{$sort}"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><br/>
+                        <input type="hidden" name="id" value="{$id}"/>
+                        <input type="submit" class="button ajax_post1" value=" 确定 "/>
+                        <input type="reset" class="button" value=" 重置 "/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript" src="__JS__/public.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="__LAYER__/layer.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script type="text/javascript" src="__ZTREE__/js/jquery.ztree.core-3.5.js"></script>
+    <script type="text/javascript" src="__ZTREE__/js/jquery.ztree.excheck-3.5.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+///////////////////////////////////商品分类树  开始///////////////////////////////////////////
+            var setting = {
+                data: {
+                    simpleData: {
+                        enable: true,
+                        pIdKey: "parent_id",
+                    }
+                },
+
+                callback: {
+                    onClick: function (event, treeId, treeNode) {
+                        $(".parent_id").val(treeNode.id);
+                        $(".parent").val(treeNode.name);
+                    }
+                }
+            };
+            var zNodes = {$row};
+            //获得对象
+            var zTreeobj = $.fn.zTree.init($("#treeDemo"), setting, zNodes);
+
+            //id存在就执行下面的代码
+            <notempty name='id'>
+            var parent_id={$parent_id}
+            //根据当前回显数据的parent_id找到父类的id节点
+            var parentNode =  zTreeobj.getNodeByParam('id',parent_id);
+
+            if(!parentNode){   //如果没有找到父分类,就不再选中
+                return;
+            }
+            //选中该节点
+            zTreeobj.selectNode(parentNode);
+            //将父节点的name和id赋值给
+            $('.parent_id').val(parentNode.id);
+            $('.parent').val(parentNode.name);
+            <else/>
+            //全部展开
+            zTreeobj.expandAll(true)
+            </notempty>
+        })
+    </script>
+</block>
+
+

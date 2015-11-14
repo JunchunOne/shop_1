@@ -1,0 +1,77 @@
+<extend name="public/common"/>
+<block name="content">
+    <div class="main-div">
+        <form method="post" action="{:U()}">
+            <table cellspacing="1" cellpadding="3" width="100%">
+                                                <tr>
+                    <td class="label">名称</td>
+                    <td>
+                        <input type="text" name="name" maxlength="60" value="{$name}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">经验值下限</td>
+                    <td>
+                        <input type="text" name="bottom" maxlength="60" value="{$bottom}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">经验值上限</td>
+                    <td>
+                        <input type="text" name="top" maxlength="60" value="{$top}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">折扣率</td>
+                    <td>
+                        <input type="text" name="discount" maxlength="60" value="{$discount}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">摘要</td>
+                    <td>
+                        <input type="text" name="intro" maxlength="60" value="{$intro}"/>
+                    </td>
+
+                </tr>
+                                                                <tr>
+                    <td class="label">状态</td>
+                    <td>
+                    <input type='radio' name='status' class='status' value='1'/> 是
+                    <input type='radio' name='status' class='status' value='0'/> 否
+                                        </td>
+                </tr>
+                                                                <tr>
+                    <td class="label">排序</td>
+                    <td>
+                        <input type="text" name="sort" maxlength="60" value="{$sort}"/>
+                    </td>
+
+                </tr>
+                                                <tr>
+                    <td colspan="2" align="center"><br/>
+                        <input type="hidden" name="id" value="{$id}"/>
+                        <input type="submit" class="button ajax_post" value=" 确定 "/>
+                        <input type="reset" class="button" value=" 重置 "/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript" src="__JS__/public.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="__LAYER__/layer.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.status').val([{$status|default =1}]);
+
+        });
+    </script>
+</block>
+
+

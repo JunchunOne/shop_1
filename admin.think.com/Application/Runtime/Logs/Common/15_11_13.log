@@ -1,0 +1,30 @@
+[ 2015-11-13T05:00:55+08:00 ] 192.168.1.7 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-13T06:58:44+08:00 ] 192.168.1.7 /Application/Public/Admin/css/bar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-13T06:59:21+08:00 ] 192.168.1.7 /Application/Public/Admin/css/bar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001852s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-13T07:01:51+08:00 ] 192.168.1.7 /Application/Public/Admin/css/bar.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000999s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002807s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-13T19:19:55+08:00 ] 192.168.1.5 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000173s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+ERR: 无法加载模块:Favicon
+
