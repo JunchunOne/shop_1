@@ -1,0 +1,42 @@
+[ 2015-11-14T21:29:35+08:00 ] 192.168.1.4 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000694s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002408s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-14T21:42:53+08:00 ] 192.168.1.4 /Application/Public/Home/Home/images/bg1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004082s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-14T21:42:53+08:00 ] 192.168.1.4 /Application/Public/Home/Home/images/bg2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-14T21:42:53+08:00 ] 192.168.1.4 /Application/Public/Home/Home/images/icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000156s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-14T23:05:24+08:00 ] 192.168.1.4 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-14T23:08:25+08:00 ] 192.168.1.4 /Application/Public/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-14T23:14:50+08:00 ] 192.168.1.4 /Application/Public/Home/images/zoomloader.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:404
+

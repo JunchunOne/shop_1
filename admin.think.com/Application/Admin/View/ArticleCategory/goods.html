@@ -1,0 +1,80 @@
+<extend name="public/common"/>
+<block name="page">
+    <link href="__CSS__/page.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="content">
+    <div class="form-div">
+        <form action="{:U('goods')}" name="searchForm" method="get">
+            <img src="__IMG__/icon_search.gif" width="26" height="22" border="0" alt="search"/>
+            <!-- 分类 -->
+            <select name="cat_id">
+                <option value="0">所有分类</option>
+                <foreach name="cat_list" item="val">
+                    <option value="<{$val.cat_id}>"><{$val.lev|str_repeat='&nbsp;&nbsp;',###}><{$val.cat_name}></option>
+                </foreach>
+            </select>
+            <!-- 品牌 -->
+            <select name="brand_id">
+                <option value="0">所有品牌</option>
+                <foreach name="brand_list" item="val">
+                    <option value="<{$val.brand_id}>"><{$val.brand_name}></option>
+                </foreach>
+            </select>
+            <!-- 推荐 -->
+            <select name="intro_type">
+                <option value="0">全部</option>
+                <option value="is_best">精品</option>
+                <option value="is_new">新品</option>
+                <option value="is_hot">热销</option>
+            </select>
+            <!-- 上架 -->
+            <select name="is_on_sale">
+                <option value=''>全部</option>
+                <option value="1">上架</option>
+                <option value="0">下架</option>
+            </select>
+            <!-- 关键字 -->
+            关键字 <input type="text" name="keyword" class="keyword" size="15"/>
+            <input type="submit" value=" 搜索 " class="button search"/>
+            <a href="{:U('goods')}"><input type="button" value=" 返回 " class="button goods"/></a>
+        </form>
+    </div>
+    <div class="list-div" id="listDiv">
+        <input type="submit" value=" 删除选中 " class="ajax_post" url="{:U('changStatus')}"/>
+        <table cellpadding="3" cellspacing="1">
+
+            <tr>
+                <th width="50px">序号<input type="checkbox" class="show"/></th>
+                <th>分类名称</th><th>是否帮助</th><th>简介</th><th>状态</th><th>排序</th>                <th>操作</th>
+            </tr>
+            <tr>
+                <td align="center" colspan="8">{$shuju}</td>
+            </tr>
+            <foreach name="lists" item="list">
+                <tr>
+                    <td align="center"><input type="checkbox" name="id[]" class="id" value="{$list.id}"/></td>
+                    <td align='center'>{$list.name}</td>
+<td align='center'>{$list.is_help}</td>
+<td align='center'>{$list.intro}</td>
+<td align='center'><a  class='ajax_get' href='{:U('changStatus',array('id'=>$list['id'],'status'=>1-$list['status']))}'><img src='__IMG__/{$list.status}.gif'/></a></td>
+<td align='center'>{$list.sort}</td>
+                    <td align="center">
+                        <a href="__APP__/Goods/?goods_id=<{$val.goods_id}>" target="_blank" title="查看"><img
+                                    src="__IMG__/icon_view.gif" width="16" height="16" border="0"/></a>
+                        <a href="{:U('edit',array('id'=>$list['id']))}" title="编辑"><img
+                                    src="__IMG__/icon_edit.gif" width="16" height="16" border="0"/></a>
+                        <a class="ajax_get" href="{:U('changStatus',array('id'=>$list['id']))}" onclick=""
+                           title="回收站"><img
+                                    src="__IMG__/icon_trash.gif" width="16" height="16" border="0"/></a></td>
+                </tr>
+            </foreach>
+        </table>
+        <div class="black">
+       {$html}
+        </div>
+    </div>
+    <script type="text/javascript" src="__JS__/public.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="__LAYER__/layer.js"></script>
+    <script type="text/javascript" src="__JS__/common.js"></script>
+</block>
