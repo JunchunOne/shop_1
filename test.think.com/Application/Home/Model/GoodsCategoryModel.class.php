@@ -26,4 +26,14 @@ class GoodsCategoryModel extends Model
 
         return $goodsList;
     }
+
+    public function goodsCategory($id)
+    {
+        //sql="SELECT gc2.lft,gc2.rght,gc2.NAME,gc2.parent_id FROM shop_goods_category gc,shop_goods_category gc2
+        // WHERE gc2.lft<=gc.lft AND gc2.rght>=gc.rght AND gc.id=31"
+        $sql = "SELECT gc2.NAME,gc2.id FROM shop_goods_category gc,shop_goods_category gc2 WHERE gc2.lft<=gc.lft AND gc2.rght>=gc.rght AND gc.id=$id";
+        $goodsCategory = $this->query($sql);
+        return $goodsCategory;
+
+    }
 }

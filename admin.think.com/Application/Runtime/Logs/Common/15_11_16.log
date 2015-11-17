@@ -1,0 +1,198 @@
+[ 2015-11-16T19:18:27+08:00 ] 192.168.1.4 /Application/Uploadsgoods/2015-11-15/5647a06310208.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-16T19:20:43+08:00 ] 192.168.1.4 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-11-16T19:22:31+08:00 ] 192.168.1.4 /Application/Public/Admin/img/uploadify-cancel.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+ERR: 无法加载模块:404
+
+[ 2015-11-16T21:21:22+08:00 ] 192.168.1.4 /Application/Uploads/Array
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:31:39+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:31:39+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009924s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010070s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:31:39+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:31:39+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:34+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:34+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:34+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:34+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:55+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:55+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000255s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:55+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000555s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:36:55+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:12+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:12+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000404s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:12+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:12+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:45+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:45+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:45+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:37:45+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:39:21+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:39:21+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:39:21+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.084092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.085147s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:39:21+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:39:26+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:40:32+08:00 ] 192.168.1.4 /Application/Uploads/g
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:40:32+08:00 ] 192.168.1.4 /Application/Uploads/o
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000208s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:40:32+08:00 ] 192.168.1.4 /Application/Uploads/s
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2015-11-16T21:40:32+08:00 ] 192.168.1.4 /Application/Uploads/d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000948s ]
+ERR: 无法加载模块:Application
+
