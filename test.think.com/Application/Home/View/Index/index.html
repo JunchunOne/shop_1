@@ -40,14 +40,13 @@
 			<div class="news mt10">
 				<h2><a href="">更多快报&nbsp;></a><strong>网站快报</strong></h2>
 				<ul>
-					<li class="odd"><a href="">电脑数码双11爆品抢不停</a></li>
-					<li><a href="">买茶叶送武夷山旅游大奖</a></li>
-					<li class="odd"><a href="">爆款手机最高直降1000</a></li>
-					<li><a href="">新鲜褚橙全面包邮开售！</a></li>
-					<li class="odd"><a href="">家具家装全场低至3折</a></li>
-					<li><a href="">买韩束，志玲邀您看电影</a></li>
-					<li class="odd"><a href="">美的先行惠双11快抢悦</a></li>
-					<li><a href="">享生活 疯狂周期购！</a></li>
+					<foreach name="article_0" item="article_0s" key="k">
+						<eq name="$k%2" value="1">
+					<li class="odd"><a href="">{$article_0s.name}</a></li>
+						<else/>
+					<li><a href="">{$article_0s.name}</a></li>
+						</eq>
+					</foreach>
 				</ul>
 
 			</div>
@@ -152,7 +151,7 @@
 						<foreach name="goodsList_1s" item="goodsLists">
 						<li>
 							<dl>
-								<dt><a href=""><img src="__UPLOADS__/{$goodsLists.logo}" alt="" /></a></dt>
+								<dt><a href="{:U('show',array('id'=>$goodsLists['id']))}"><img src="__UPLOADS__/{$goodsLists.logo}" alt="" /></a></dt>
 								<dd><a href="">{$goodsLists.name}</a></dd>
 								<dd><span>售价：</span><strong> ￥{$goodsLists.shop_price}</strong></dd>
 							</dl>

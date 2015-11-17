@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -23,7 +24,7 @@
         </div>
         <div class="topnav_right fr">
             <ul>
-                <li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+                <li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>]</li>
                 <li class="line">|</li>
                 <li>我的订单</li>
                 <li class="line">|</li>
@@ -47,7 +48,7 @@
             <div class="search_form">
                 <div class="form_left fl"></div>
                 <form action="" name="serarch" method="get" class="fl">
-                    <input type="text" class="txt" value="请输入商品关键字" /><input type="submit" class="btn" value="搜索" />
+                    <input type="text" class="txt" value="请输入商品关键字"/><input type="submit" class="btn" value="搜索"/>
                 </form>
                 <div class="form_right fl"></div>
             </div>
@@ -96,9 +97,9 @@
                     <div class="viewlist mt10">
                         <h3>最近浏览的商品：</h3>
                         <ul>
-                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list1.jpg" alt="" /></a></li>
-                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list2.jpg" alt="" /></a></li>
-                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list3.jpg" alt="" /></a></li>
+                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list1.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list2.jpg" alt=""/></a></li>
+                            <li><a href=""><img src="http://test.think.com/Application/Public/Home/images/view_list3.jpg" alt=""/></a></li>
                         </ul>
                     </div>
                 </dd>
@@ -130,274 +131,26 @@
     <div class="nav w1210 bc mt10">
         <!--  商品分类部分 start-->
         <div class="category fl <?php echo ($isHiddenMenu?'cat1':''); ?>"> <!-- 非首页，需要添加cat1类 -->
-            <div class="cat_hd <?php echo ($isHiddenMenu?'off':''); ?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
+            <div class="cat_hd <?php echo ($isHiddenMenu?'off':''); ?>">
+                <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
                 <h2>全部商品分类</h2>
                 <em></em>
             </div>
 
             <div class="cat_bd <?php echo ($isHiddenMenu?'none':''); ?> ">
+                <?php if(is_array($goodslist)): foreach($goodslist as $key=>$Val): if(($Val["level"]) == "1"): ?><div class="cat item1">
+                            <h3><a href=""><?php echo ($Val["name"]); ?></a> <b></b></h3>
 
-                <div class="cat item1">
-                    <h3><a href="">图像、音像、数字商品</a> <b></b></h3>
-                    <div class="cat_detail">
-                        <dl class="dl_1st">
-                            <dt><a href="">电子书</a></dt>
-                            <dd>
-                                <a href="">免费</a>
-                                <a href="">小说</a>
-                                <a href="">励志与成功</a>
-                                <a href="">婚恋/两性</a>
-                                <a href="">文学</a>
-                                <a href="">经管</a>
-                                <a href="">畅读VIP</a>
-                            </dd>
-                        </dl>
+                            <div class="cat_detail">
+                                <?php if(is_array($goodslist)): foreach($goodslist as $key=>$Value): if(($Value["parent_id"]) == $Val["id"]): ?><dl class="dl_1st">
+                                            <dt><a href=""><?php echo ($Value["name"]); ?></a></dt>
+                                            <dd>
+                                                <?php if(is_array($goodslist)): foreach($goodslist as $key=>$Value1): if(($Value1["parent_id"]) == $Value["id"]): ?><a href=""><?php echo ($Value1["name"]); ?></a><?php endif; endforeach; endif; ?>
 
-                        <dl>
-                            <dt><a href="">数字音乐</a></dt>
-                            <dd>
-                                <a href="">通俗流行</a>
-                                <a href="">古典音乐</a>
-                                <a href="">摇滚说唱</a>
-                                <a href="">爵士蓝调</a>
-                                <a href="">乡村民谣</a>
-                                <a href="">有声读物</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">音像</a></dt>
-                            <dd>
-                                <a href="">音乐</a>
-                                <a href="">影视</a>
-                                <a href="">教育音像</a>
-                                <a href="">游戏</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">文艺</a></dt>
-                            <dd>
-                                <a href="">小说</a>
-                                <a href="">文学</a>
-                                <a href="">青春文学</a>
-                                <a href="">传纪</a>
-                                <a href="">艺术</a>
-                                <a href="">经管</a>
-                                <a href="">畅读VIP</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">人文社科</a></dt>
-                            <dd>
-                                <a href="">历史</a>
-                                <a href="">心理学</a>
-                                <a href="">政治/军事</a>
-                                <a href="">国学/古籍</a>
-                                <a href="">哲学/宗教</a>
-                                <a href="">社会科学</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">经管励志</a></dt>
-                            <dd>
-                                <a href="">经济</a>
-                                <a href="">金融与投资</a>
-                                <a href="">管理</a>
-                                <a href="">励志与成功</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">人文社科</a></dt>
-                            <dd>
-                                <a href="">历史</a>
-                                <a href="">心理学</a>
-                                <a href="">政治/军事</a>
-                                <a href="">国学/古籍</a>
-                                <a href="">哲学/宗教</a>
-                                <a href="">社会科学</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">生活</a></dt>
-                            <dd>
-                                <a href="">烹饪/美食</a>
-                                <a href="">时尚/美妆</a>
-                                <a href="">家居</a>
-                                <a href="">娱乐/休闲</a>
-                                <a href="">动漫/幽默</a>
-                                <a href="">体育/运动</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">科技</a></dt>
-                            <dd>
-                                <a href="">科普</a>
-                                <a href="">建筑</a>
-                                <a href="">IT</a>
-                                <a href="">医学</a>
-                                <a href="">工业技术</a>
-                                <a href="">电子/通信</a>
-                                <a href="">农林</a>
-                                <a href="">科学与自然</a>
-                            </dd>
-                        </dl>
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">家用电器</a><b></b></h3>
-                    <div class="cat_detail">
-                        <dl class="dl_1st">
-                            <dt><a href="">大家电</a></dt>
-                            <dd>
-                                <a href="">平板电视</a>
-                                <a href="">空调</a>
-                                <a href="">冰箱</a>
-                                <a href="">洗衣机</a>
-                                <a href="">热水器</a>
-                                <a href="">DVD</a>
-                                <a href="">烟机/灶具</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">生活电器</a></dt>
-                            <dd>
-                                <a href="">取暖器</a>
-                                <a href="">加湿器</a>
-                                <a href="">净化器</a>
-                                <a href="">饮水机</a>
-                                <a href="">净水设备</a>
-                                <a href="">吸尘器</a>
-                                <a href="">电风扇</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">厨房电器</a></dt>
-                            <dd>
-                                <a href="">电饭煲</a>
-                                <a href="">豆浆机</a>
-                                <a href="">面包机</a>
-                                <a href="">咖啡机</a>
-                                <a href="">微波炉</a>
-                                <a href="">电磁炉</a>
-                                <a href="">电水壶</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">个护健康</a></dt>
-                            <dd>
-                                <a href="">剃须刀</a>
-                                <a href="">电吹风</a>
-                                <a href="">按摩器</a>
-                                <a href="">足浴盆</a>
-                                <a href="">血压计</a>
-                                <a href="">体温计</a>
-                                <a href="">血糖仪</a>
-                            </dd>
-                        </dl>
-
-                        <dl>
-                            <dt><a href="">五金家装</a></dt>
-                            <dd>
-                                <a href="">灯具</a>
-                                <a href="">LED灯</a>
-                                <a href="">水槽</a>
-                                <a href="">龙头</a>
-                                <a href="">门铃</a>
-                                <a href="">电器开关</a>
-                                <a href="">插座</a>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">手机、数码</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">电脑、办公</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">家局、家具、家装、厨具</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">服饰鞋帽</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">个护化妆</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">礼品箱包、钟表、珠宝</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">运动健康</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">汽车用品</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">母婴、玩具乐器</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">食品饮料、保健食品</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
-                <div class="cat">
-                    <h3><a href="">彩票、旅行、充值、票务</a><b></b></h3>
-                    <div class="cat_detail none">
-
-                    </div>
-                </div>
-
+                                            </dd>
+                                        </dl><?php endif; endforeach; endif; ?>
+                            </div>
+                        </div><?php endif; endforeach; endif; ?>
             </div>
 
         </div>
@@ -427,7 +180,9 @@
 	<div class="main w1210 mt10 bc">
 		<!-- 面包屑导航 start -->
 		<div class="breadcrumb">
-			<h2>当前位置：<a href="">首页</a> > <a href="">电脑、办公</a> > <a href="">笔记本</a> > ThinkPad X230(23063T4）12.5英寸笔记本</h2>
+			<h2>当前位置：<a href="">首页</a>
+				<?php if(is_array($goodsCategory)): $i = 0; $__LIST__ = $goodsCategory;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goodsCategorys): $mod = ($i % 2 );++$i;?>> <a href=""><?php echo ($goodsCategorys["name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+				> <?php echo ($name); ?></h2>
 		</div>
 		<!-- 面包屑导航 end -->
 
@@ -548,13 +303,13 @@
 		<div class="goods_content fl mt10 ml10">
 			<!-- 商品概要信息 start -->
 			<div class="summary">
-				<h3><strong>ThinkPad X230(23063T4）12.5英寸笔记本（i5-3230M 8GB 500G HD4000 指纹蓝牙 WIN8PRC 一年质保）</strong></h3>
+				<h3><strong><?php echo ($name); ?></strong></h3>
 
 				<!-- 图片预览区域 start -->
 				<div class="preview fl">
 					<div class="midpic">
-						<a href="images/preview_l1.jpg" class="jqzoom" rel="gal1">   <!-- 第一幅图片的大图 class 和 rel属性不能更改 -->
-							<img src="http://test.think.com/Application/Public/Home/images/preview_m1.jpg" alt="" />               <!-- 第一幅图片的中图 -->
+						<a href="http://admin.think.com/Application/Uploads/<?php echo ($logo); ?>" class="jqzoom" rel="gal1">   <!-- 第一幅图片的大图 class 和 rel属性不能更改 -->
+							<img src="http://admin.think.com/Application/Uploads/<?php echo ($logo); ?>" alt="" />               <!-- 第一幅图片的中图 -->
 						</a>
 					</div>
 
@@ -565,47 +320,9 @@
 						<a href="javascript:;" id="forward" class="on"></a>
 						<div class="smallpic_wrap">
 							<ul>
-								<li class="cur">
-									<a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'images/preview_m1.jpg',largeimage: 'images/preview_l1.jpg'}"><img src="http://test.think.com/Application/Public/Home/images/preview_s1.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'images/preview_m2.jpg',largeimage: 'images/preview_l2.jpg'}"><img src="http://test.think.com/Application/Public/Home/images/preview_s2.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m3.jpg',largeimage: 'images/preview_l3.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s3.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m4.jpg',largeimage: 'images/preview_l4.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s4.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m5.jpg',largeimage: 'images/preview_l5.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s5.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m6.jpg',largeimage: 'images/preview_l6.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s6.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m7.jpg',largeimage: 'images/preview_l7.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s7.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m8.jpg',largeimage: 'images/preview_l8.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s8.jpg"></a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"
-									   rel="{gallery: 'gal1', smallimage: 'images/preview_m9.jpg',largeimage: 'images/preview_l9.jpg'}">
-										<img src="http://test.think.com/Application/Public/Home/images/preview_s9.jpg"></a>
-								</li>
+								<?php if(is_array($path)): $i = 0; $__LIST__ = $path;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$Paths): $mod = ($i % 2 );++$i;?><li <?php if(($i) == "1"): ?>class="zoomThumbActive"<?php endif; ?>>
+									<a <?php if(($i) == "1"): ?>class="111"<?php endif; ?> href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: 'http://admin.think.com/Application/Uploads/<?php echo ($Paths); ?>',largeimage: 'http://admin.think.com/Application/Uploads/<?php echo ($Paths); ?>'}"><img src="http://admin.think.com/Application/Uploads/<?php echo ($Paths); ?>"><?php echo ($i); ?></a>
+								</li><?php endforeach; endif; else: echo "" ;endif; ?>
 							</ul>
 						</div>
 
@@ -616,10 +333,10 @@
 				<!-- 商品基本信息区域 start -->
 				<div class="goodsinfo fl ml10">
 					<ul>
-						<li><span>商品编号： </span>971344</li>
-						<li class="market_price"><span>定价：</span><em>￥6399.00</em></li>
-						<li class="shop_price"><span>本店价：</span> <strong>￥6299.00</strong> <a href="">(降价通知)</a></li>
-						<li><span>上架时间：</span>2012-09-12</li>
+						<li><span>商品编号： </span><?php echo ($sn); ?></li>
+						<li class="market_price"><span>定价：</span><em>￥<?php echo ($shop_price); ?></em></li>
+						<li class="shop_price"><span>本店价：</span> <strong>￥<?php echo ($shop_price); ?></strong> <a href="">(降价通知)</a></li>
+						<li><span>上架时间：</span><?php echo ($shop_price); ?></li>
 						<li class="star"><span>商品评分：</span> <strong></strong><a href="">(已有21人评价)</a></li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
 					</ul>
 					<form action="" method="post" class="choose">
@@ -958,64 +675,13 @@
 
 <!-- 底部导航 start -->
 <div class="bottomnav w1210 bc mt10">
-    <div class="bnav1">
-        <h3><b></b> <em>购物指南</em></h3>
-        <ul>
-            <li><a href="">购物流程</a></li>
-            <li><a href="">会员介绍</a></li>
-            <li><a href="">团购/机票/充值/点卡</a></li>
-            <li><a href="">常见问题</a></li>
-            <li><a href="">大家电</a></li>
-            <li><a href="">联系客服</a></li>
-        </ul>
-    </div>
+    <?php if(is_array($articleCategory)): foreach($articleCategory as $k=>$articleCategorys): ?><div class="bnav<?php echo ($k+1); ?>">
+            <h3><b></b> <em><?php echo ($articleCategorys["name"]); ?></em></h3>
+            <ul>
+                <?php if(is_array($article_1)): foreach($article_1 as $key=>$articles): if(($articles["article_category_id"]) == $articleCategorys["id"]): ?><li><a href=""><?php echo ($articles["name"]); ?></a></li><?php endif; endforeach; endif; ?>
+            </ul>
+        </div><?php endforeach; endif; ?>
 
-    <div class="bnav2">
-        <h3><b></b> <em>配送方式</em></h3>
-        <ul>
-            <li><a href="">上门自提</a></li>
-            <li><a href="">快速运输</a></li>
-            <li><a href="">特快专递（EMS）</a></li>
-            <li><a href="">如何送礼</a></li>
-            <li><a href="">海外购物</a></li>
-        </ul>
-    </div>
-
-
-    <div class="bnav3">
-        <h3><b></b> <em>支付方式</em></h3>
-        <ul>
-            <li><a href="">货到付款</a></li>
-            <li><a href="">在线支付</a></li>
-            <li><a href="">分期付款</a></li>
-            <li><a href="">邮局汇款</a></li>
-            <li><a href="">公司转账</a></li>
-        </ul>
-    </div>
-
-    <div class="bnav4">
-        <h3><b></b> <em>售后服务</em></h3>
-        <ul>
-            <li><a href="">退换货政策</a></li>
-            <li><a href="">退换货流程</a></li>
-            <li><a href="">价格保护</a></li>
-            <li><a href="">退款说明</a></li>
-            <li><a href="">返修/退换货</a></li>
-            <li><a href="">退款申请</a></li>
-        </ul>
-    </div>
-
-    <div class="bnav5">
-        <h3><b></b> <em>特色服务</em></h3>
-        <ul>
-            <li><a href="">夺宝岛</a></li>
-            <li><a href="">DIY装机</a></li>
-            <li><a href="">延保服务</a></li>
-            <li><a href="">家电下乡</a></li>
-            <li><a href="">京东礼品卡</a></li>
-            <li><a href="">能效补贴</a></li>
-        </ul>
-    </div>
 </div>
 <!-- 底部导航 end -->
 
@@ -1035,14 +701,16 @@
         <a href="">销售联盟</a> |
         <a href="">京西论坛</a>
     </p>
+
     <p class="copyright">
-        © 2005-2013 京东网上商城 版权所有，并保留所有权利。  ICP备案证书号:京ICP证070359号
+        © 2005-2013 京东网上商城 版权所有，并保留所有权利。 ICP备案证书号:京ICP证070359号
     </p>
+
     <p class="auth">
-        <a href=""><img src="http://test.think.com/Application/Public/Home/images/xin.png" alt="" /></a>
-        <a href=""><img src="http://test.think.com/Application/Public/Home/images/kexin.jpg" alt="" /></a>
-        <a href=""><img src="http://test.think.com/Application/Public/Home/images/police.jpg" alt="" /></a>
-        <a href=""><img src="http://test.think.com/Application/Public/Home/images/beian.gif" alt="" /></a>
+        <a href=""><img src="http://test.think.com/Application/Public/Home/images/xin.png" alt=""/></a>
+        <a href=""><img src="http://test.think.com/Application/Public/Home/images/kexin.jpg" alt=""/></a>
+        <a href=""><img src="http://test.think.com/Application/Public/Home/images/police.jpg" alt=""/></a>
+        <a href=""><img src="http://test.think.com/Application/Public/Home/images/beian.gif" alt=""/></a>
     </p>
 </div>
 <!-- 底部版权 end -->

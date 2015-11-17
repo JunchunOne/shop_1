@@ -16,3 +16,9 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
 ERR: 无法加载模块:404
 
+[ 2015-11-15T21:14:02+08:00 ] 192.168.1.7 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000207s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Favicon
+

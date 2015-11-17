@@ -4232,3 +4232,1116 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001928s ]
 
+[ 2015-11-15T21:22:41+08:00 ] 192.168.1.7 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+INFO: [ action_begin ] --START--
+
+[ 2015-11-15T21:22:42+08:00 ] 192.168.1.7 /index.php/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000707s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-11-15T21:22:43+08:00 ] 192.168.1.7 /index.php/Admin/Verify/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000288s ]
+NOTIC: [2] imagettftext(): libgd was not built with FreeType font support
+ /root/www/ThinkPHP/Library/Think/Verify.class.php 第 174 行.
+NOTIC: [2] imagettftext(): libgd was not built with FreeType font support
+ /root/www/ThinkPHP/Library/Think/Verify.class.php 第 174 行.
+NOTIC: [2] imagettftext(): libgd was not built with FreeType font support
+ /root/www/ThinkPHP/Library/Think/Verify.class.php 第 174 行.
+NOTIC: [2] imagettftext(): libgd was not built with FreeType font support
+ /root/www/ThinkPHP/Library/Think/Verify.class.php 第 174 行.
+NOTIC: [2] imagettftext(): libgd was not built with FreeType font support
+ /root/www/ThinkPHP/Library/Think/Verify.class.php 第 174 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006288s ]
+
+[ 2015-11-15T21:23:04+08:00 ] 192.168.1.7 /index.php/Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000161s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001531s ]
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /root/www/admin.think.com/Application/Admin/Model/AdminModel.class.php 第 8 行.
+NOTIC: [2048] Declaration of Admin\Model\AdminModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /root/www/admin.think.com/Application/Admin/Model/AdminModel.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `shop_admin` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_admin` WHERE `username` = 'root' LIMIT 1   [ RunTime:0.0246s ]
+SQL: select  distinct  id,url from shop_permission  where id in
+(select  distinct rp.permission_id from  shop_admin_role as ar  join shop_role_permission as rp on ar.role_id = rp.role_id  where ar.admin_id = 11)
+or id in(select  ap.permission_id from shop_admin_permission as ap where ap.admin_id = 11) [ RunTime:0.0379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001530s ]
+
+[ 2015-11-15T21:23:05+08:00 ] 192.168.1.7 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000133s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000927s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2015-11-15T21:23:05+08:00 ] 192.168.1.7 /index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2015-11-15T21:23:05+08:00 ] 192.168.1.7 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001944s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2015-11-15T21:23:05+08:00 ] 192.168.1.7 /index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000542s ]
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::add() should be compatible with Think\Model::add($data = '', $options = Array, $replace = false) /root/www/admin.think.com/Application/Admin/Model/MenuModel.class.php 第 9 行.
+NOTIC: [2048] Declaration of Admin\Model\MenuModel::save() should be compatible with Think\Model::save($data = '', $options = Array) /root/www/admin.think.com/Application/Admin/Model/MenuModel.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `shop_menu` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`name`,`url`,`level`,`parent_id` FROM `shop_menu` WHERE ( status>=0 ) ORDER BY lft  [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000436s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007169s ]
+
+[ 2015-11-15T21:23:36+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000434s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.1012s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002464s ]
+
+[ 2015-11-15T21:23:44+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000230s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002054s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0191s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2015-11-15T21:24:15+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002942s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0023s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('电脑数码双11爆品抢不停','6','电脑数码双11爆品抢不停','1','1447593855','电脑数码双11爆品抢不停','1','23','0') [ RunTime:0.0258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000698s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005049s ]
+
+[ 2015-11-15T21:24:17+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 0,10   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001914s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002667s ]
+
+[ 2015-11-15T21:24:26+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001818s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.002248s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000679s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001503s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2015-11-15T21:24:31+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001499s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2015-11-15T21:24:56+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003222s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0022s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('爆款手机最高直降1000','6','爆款手机最高直降1000','1','1447593896','爆款手机最高直降1000','1','1','0') [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000438s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001508s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001932s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002288s ]
+
+[ 2015-11-15T21:24:58+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000200s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001836s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002127s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2015-11-15T21:25:06+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-11-15T21:25:38+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000158s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.1304s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('家具家装全场低至3折','6','家具家装全场低至3折','1','1447593938','家具家装全场低至3折','1','1','0') [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000956s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-11-15T21:25:39+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000437s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001838s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003159s ]
+
+[ 2015-11-15T21:25:47+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002552s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000428s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001219s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2015-11-15T21:26:32+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000294s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0023s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('买茶叶送武夷山旅游大奖','6','买茶叶送武夷山旅游大奖','1','1447593992','买茶叶送武夷山旅游大奖','1','1','0') [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000463s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001653s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001608s ]
+
+[ 2015-11-15T21:26:34+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000160s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.002890s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000683s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001804s ]
+
+[ 2015-11-15T21:26:43+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000556s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014304s ]
+
+[ 2015-11-15T21:27:19+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000298s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0018s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('享生活 疯狂周期购！','6','享生活 疯狂周期购！','1','1447594039','享生活 疯狂周期购！','1','23','0') [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2015-11-15T21:27:21+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000334s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002254s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000619s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001287s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001948s ]
+
+[ 2015-11-15T21:27:34+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000708s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001070s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-11-15T21:27:43+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000671s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+
+[ 2015-11-15T21:27:46+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 134 行.
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8] Undefined variable: name /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 29 行.
+NOTIC: [8] Undefined variable: article_category_id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 37 行.
+NOTIC: [8] Undefined variable: content /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 45 行.
+NOTIC: [8] Undefined variable: times /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 52 行.
+NOTIC: [8] Undefined variable: inputtime /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 59 行.
+NOTIC: [8] Undefined variable: intro /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 66 行.
+NOTIC: [8] Undefined variable: sort /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 80 行.
+NOTIC: [8] Undefined variable: id /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2015-11-15T21:27:50+08:00 ] 192.168.1.7 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.002277s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0025s ]
+SQL: INSERT INTO `shop_article` (`name`,`article_category_id`,`content`,`times`,`inputtime`,`intro`,`status`,`sort`,`id`) VALUES ('买韩束，志玲邀您看电影','6','买韩束，志玲邀您看电影','1','1447594070','买韩束，志玲邀您看电影','1','1','0') [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000898s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001569s ]
+
+[ 2015-11-15T21:27:51+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000331s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002386s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2015-11-15T21:27:54+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 0,10   [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000992s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002207s ]
+
+[ 2015-11-15T21:27:57+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000273s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000603s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001422s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002580s ]
+
+[ 2015-11-15T21:28:00+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000319s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001321s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 0,10   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000481s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001330s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002443s ]
+
+[ 2015-11-15T21:28:15+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000370s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000643s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004335s ]
+
+[ 2015-11-15T21:28:20+08:00 ] 192.168.1.7 /index.php/Admin/Article/edit/id/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.002294s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_article` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `shop_article_category` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_article_category` WHERE `status` >= 0  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000403s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000940s ]
+NOTIC: [8] Undefined variable: url /root/www/admin.think.com/Application/Runtime/Cache/Admin/cbe9f13a709eebedb39c5af2f6830798.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-15T21:28:25+08:00 ] 192.168.1.7 /index.php/Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000301s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002563s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0015s ]
+SQL: UPDATE `shop_article` SET `name`='电脑数码双11爆品抢不停',`article_category_id`='6',`content`='电脑数码双11爆品抢不停',`times`='1',`inputtime`='1447593855',`intro`='电脑数码双11爆品抢不停',`status`='1',`sort`='23' WHERE `id` = 11 [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000433s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-11-15T21:28:26+08:00 ] 192.168.1.7 /index.php/Admin/Article/goods/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2048] Declaration of Admin\Controller\ArticleController::view_before() should be compatible with Admin\Controller\BaseController::view_before($id = '') /root/www/admin.think.com/Application/Admin/Controller/ArticleController.class.php 第 7 行.
+INFO: [ action_begin ] --START--
+INFO: Run \Admin\Behavior\CheckPermissionBehavior [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `shop_article` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_article` WHERE `status` <> -1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_article` WHERE `status` <> -1 LIMIT 10,10   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: list /root/www/admin.think.com/Application/Admin/Controller/BaseController.class.php 第 45 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001382s ]
+NOTIC: [8] Undefined variable: cat_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 29 行.
+NOTIC: [8] Undefined variable: brand_list /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 34 行.
+NOTIC: [8] Undefined variable: shuju /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 64 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+NOTIC: [8] Undefined variable: val /root/www/admin.think.com/Application/Runtime/Cache/Admin/be88893e7da5025b448de0b8788aff3d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002183s ]
+

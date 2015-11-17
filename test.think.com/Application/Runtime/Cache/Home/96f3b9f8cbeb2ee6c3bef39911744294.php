@@ -210,14 +210,9 @@
 			<div class="news mt10">
 				<h2><a href="">更多快报&nbsp;></a><strong>网站快报</strong></h2>
 				<ul>
-					<li class="odd"><a href="">电脑数码双11爆品抢不停</a></li>
-					<li><a href="">买茶叶送武夷山旅游大奖</a></li>
-					<li class="odd"><a href="">爆款手机最高直降1000</a></li>
-					<li><a href="">新鲜褚橙全面包邮开售！</a></li>
-					<li class="odd"><a href="">家具家装全场低至3折</a></li>
-					<li><a href="">买韩束，志玲邀您看电影</a></li>
-					<li class="odd"><a href="">美的先行惠双11快抢悦</a></li>
-					<li><a href="">享生活 疯狂周期购！</a></li>
+					<?php if(is_array($article_0)): foreach($article_0 as $k=>$article_0s): if(($$k%2) == "1"): ?><li class="odd"><a href=""><?php echo ($article_0s["name"]); ?></a></li>
+						<?php else: ?>
+					<li><a href=""><?php echo ($article_0s["name"]); ?></a></li><?php endif; endforeach; endif; ?>
 				</ul>
 
 			</div>
@@ -321,7 +316,7 @@
 					<ul>
 						<?php if(is_array($goodsList_1s)): foreach($goodsList_1s as $key=>$goodsLists): ?><li>
 							<dl>
-								<dt><a href=""><img src="http://admin.think.com/Application/Uploads/<?php echo ($goodsLists["logo"]); ?>" alt="" /></a></dt>
+								<dt><a href="<?php echo U('show',array('id'=>$goodsLists['id']));?>"><img src="http://admin.think.com/Application/Uploads/<?php echo ($goodsLists["logo"]); ?>" alt="" /></a></dt>
 								<dd><a href=""><?php echo ($goodsLists["name"]); ?></a></dd>
 								<dd><span>售价：</span><strong> ￥<?php echo ($goodsLists["shop_price"]); ?></strong></dd>
 							</dl>
@@ -652,7 +647,7 @@
     <?php if(is_array($articleCategory)): foreach($articleCategory as $k=>$articleCategorys): ?><div class="bnav<?php echo ($k+1); ?>">
             <h3><b></b> <em><?php echo ($articleCategorys["name"]); ?></em></h3>
             <ul>
-                <?php if(is_array($article)): foreach($article as $key=>$articles): if(($articles["article_category_id"]) == $articleCategorys["id"]): ?><li><a href=""><?php echo ($articles["name"]); ?></a></li><?php endif; endforeach; endif; ?>
+                <?php if(is_array($article_1)): foreach($article_1 as $key=>$articles): if(($articles["article_category_id"]) == $articleCategorys["id"]): ?><li><a href=""><?php echo ($articles["name"]); ?></a></li><?php endif; endforeach; endif; ?>
             </ul>
         </div><?php endforeach; endif; ?>
 
